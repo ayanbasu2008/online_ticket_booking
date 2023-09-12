@@ -25,5 +25,6 @@ public class Movie {
     private String description;
 
     @ManyToMany (mappedBy = "movies")
+    @JsonIgnore
     private Set<City> cities;
 }
